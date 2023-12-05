@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-def buildImage() {
-    echo 
+def buildImage(String imageName) {
+    return new Docker(this).buildDockerImage(imageName)
 }
